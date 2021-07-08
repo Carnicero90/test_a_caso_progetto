@@ -7,7 +7,7 @@
             <div class="card">
                 <div class="user-info">
                     @dump(
-                        $now
+                        Auth::user()->categories[0]->name
                     )
 
                     <div class="card-header">username: {{ Auth::user()->name . ' ' . Auth::user()->lastname }} </div>

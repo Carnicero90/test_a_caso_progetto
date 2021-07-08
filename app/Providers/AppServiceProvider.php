@@ -27,10 +27,10 @@ class AppServiceProvider extends ServiceProvider
         // TOTEST
         // Braintree stuff
         //    $gateway = new \Braintree\Gateway([
-        //     'environment' => 'sandbox',
-        //     'merchantId' => 'wz43wy6rkg4jm49v',
-        //     'publicKey' => 'vhms7wg2wy7m8m4f',
-        //     'privateKey' => '66cc12638a4d5123fc40ade8e61303cb'
+        //     'environment' => '',
+        //     'merchantId' => '',
+        //     'publicKey' => '',
+        //     'privateKey' => ''
         //    ]);
         \Braintree\Configuration::environment(env('BRAINTREE_ENV'));
         \Braintree\Configuration::environment(env('BRAINTREE_ENV'));
