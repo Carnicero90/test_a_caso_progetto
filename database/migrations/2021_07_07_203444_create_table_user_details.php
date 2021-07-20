@@ -20,7 +20,6 @@ class CreateTableUserDetails extends Migration
             $table->foreign('user_id')
             ->references('id')
             ->on('users');
-            // TODO: usa la forma piu esplicita nel sito vero, che sta roba ti scordi cosa significhi
         });
     }
 

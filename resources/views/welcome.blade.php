@@ -25,6 +25,7 @@ authorization: "{{ \Braintree\ClientToken::generate() }}",
 container: '#dropin-container'
 }, function (createErr, instance) {
 button.addEventListener('click', function () {
+    alert('ciao');
 instance.requestPaymentMethod(function (err, payload) {
 $.get('{{ route('payment.make') }}', {payload}, function (response) {
 if (response.success) {

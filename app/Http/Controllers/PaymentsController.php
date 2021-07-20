@@ -17,6 +17,7 @@ class PaymentsController extends Controller
                 'submitForSettlements' => True
             ]
         ]);
+        dd($status);
         return response()->json($status);
     }
 }
